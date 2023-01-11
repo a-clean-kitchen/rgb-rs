@@ -25,12 +25,12 @@ fn border(hex: &String){
 }
 
 fn main() {
-   let grad = colorgrad::rainbow();
-   let freq = Duration::from_millis(80);
-   loop{
-    for col in map(&grad){
-        border(&col);
-        thread::sleep(freq);
+    let grad = colorgrad::rainbow();
+    let freq = Duration::from_millis(80);
+    loop{
+        for col in map(&grad){
+            border(&col);
+            thread::sleep(freq);
+        }
     }
-   }
 }
