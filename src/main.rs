@@ -1,5 +1,6 @@
-use colorgrad::{Gradient};
-use std::{thread, time::Duration, process::Command};
+use colorgrad::Gradient;
+use std::{process::Command, thread, time::Duration};
+
 
 fn map(colors: &Gradient) -> Vec<String> { 
     let mut l = vec![];
