@@ -2,7 +2,7 @@ use colorgrad::Gradient;
 use std::{process::Command, thread, time::Duration};
 
 
-fn map(colors: &Gradient) -> Vec<String> { 
+fn map(colors: &Gradient) -> Vec<String> {
     let mut l = vec![];
     for col in colors.colors(50) {
         l.push(col.to_hex_string())
